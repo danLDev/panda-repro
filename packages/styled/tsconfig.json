@@ -1,13 +1,11 @@
 {
-  "include": ["."],
-  "exclude": ["node_modules"],
-
   "compilerOptions": {
     "baseUrl": ".",
-    "jsx": "react-jsx",
     "module": "ES2022",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true
-  }
+  },
+  "include": ["panda.config.ts"],
+  "exclude": ["node_modules"]
 }

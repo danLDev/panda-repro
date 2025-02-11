@@ -1,0 +1,29 @@
+{
+  "name": "@repo/platform",
+  "description": "Awesome Xelix Front End",
+  "version": "2.3.9",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+   "@repo/ui": "*",
+   "vite": "^6.0.11",
+   "@vitejs/plugin-react-swc": "^3.7.0",
+    "@types/react": "^18.3.11",
+    "react": "18.3.1",
+    "react-dom": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@repo/styled-system": "*",
+    "postcss": "^8.4.49"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.45.2"
+  },
+
+  "scripts": {
+   "dev": "panda cssgen -w & vite"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

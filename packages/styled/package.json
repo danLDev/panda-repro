@@ -1,0 +1,52 @@
+{
+  "name": "@repo/styled-system",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./css": {
+      "types": "./dist/css/index.d.ts",
+      "require": "./dist/css/index.mjs",
+      "import": "./dist/css/index.mjs"
+    },
+    "./tokens": {
+      "types": "./dist/dist/tokens/index.d.ts",
+      "require": "./dist/tokens/index.mjs",
+      "import": "./dist/tokens/index.mjs"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/types/index.mjs",
+      "import": "./dist/types/index.mjs"
+    },
+    "./patterns": {
+      "types": "./dist/patterns/index.d.ts",
+      "require": "./dist/patterns/index.mjs",
+      "import": "./dist/patterns/index.mjs"
+    },
+    "./jsx": {
+      "types": "./dist/jsx/index.d.ts",
+      "require": "./dist/jsx/index.mjs",
+      "import": "./dist/jsx/index.mjs"
+    },
+    "./themes": {
+      "types": "./dist/themes/index.d.ts",
+      "require": "./dist/themes/index.mjs",
+      "import": "./dist/themes/index.mjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "postinstall": "panda codegen && panda cssgen",
+    "build": "panda codegen && panda cssgen",
+    "dev": "panda codegen -w & panda cssgen -w"
+  },
+  "dependencies": {
+    "@fe-xelix/tokens": "0.33.0",
+    "@pandacss/dev": "^0.45.2"
+  },
+  "devDependencies": {
+    "@fe-xelix/typescript-config": "^0.44.0",
+    "typescript": "^5.6.3"
+  }
+}

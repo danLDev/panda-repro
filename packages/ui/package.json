@@ -4,19 +4,14 @@
   "private": true,
   "exports": {
     "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./buildinfo": "./dist/panda.buildinfo.json"
   },
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
-    "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "dev": "panda ship --outfile=dist/panda.buildinfo.json --watch",
+    "build": "panda ship --outfile=dist/panda.buildinfo.json --watch"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "@turbo/gen": "^2.4.0",
-    "@types/node": "^22.13.0",
+    "@repo/styled-system": "*",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
     "eslint": "^9.20.0",
